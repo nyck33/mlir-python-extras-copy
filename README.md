@@ -154,3 +154,9 @@ $ pip install git+https://github.com/makslevental/mlir-python-extras
 ## Examples/Demo
 
 Check [tests](tests) for a plethora of example code.
+
+### Ran this to install into conda env mlir-python
+
+```bash
+HOST_MLIR_PYTHON_PACKAGE_PREFIX=mlir pip install git+https://github.com/makslevental/mlir-python-extras
+```
