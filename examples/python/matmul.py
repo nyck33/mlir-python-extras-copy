@@ -98,7 +98,8 @@ def generate_matmul(
     use_warp_specialization=True,
     saveIR=False,
     max_num_stages=3,
-    options=f"cubin-chip=sm_90a cubin-features=+ptx80 opt-level=3",
+    #options=f"cubin-chip=sm_90a cubin-features=+ptx80 opt-level=3",
+    options=f"cubin-chip=sm_80 cubin-features=+ptx76 opt-level=3",
 ):
     with matmulBuilder.ir.Context() as ctx, matmulBuilder.ir.Location.unknown():
         if use_warp_specialization:
